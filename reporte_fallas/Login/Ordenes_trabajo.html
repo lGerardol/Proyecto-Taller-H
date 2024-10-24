@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Órdenes de Trabajo</title>
+
+    <!-- Incluir Bulma desde CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css" rel="stylesheet">
+    <!-- Incluir Lora desde Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;600&display=swap" rel="stylesheet">
+
+    <style>
+        /* Color personalizado mostaza (#dea632) para la barra superior */
+        .navbar-mostaza {
+            background-color: #dea632;
+            padding: 20px;
+        }
+
+        /* Ajustes para la imagen con tamaño máximo y sin distorsión */
+        .navbar-brand img {
+            max-width: 900px; /* Limitar el ancho máximo */
+            max-height: 110px; /* Ajustar la altura máxima para que sea legible */
+            height: auto; /* Mantener la proporción de la imagen */
+            margin-left: -170px; /* Mover la imagen más a la izquierda */
+        }
+
+        /* Color personalizado rojo terracota (#b1291d) para la barra inferior */
+        .footer-terracota {
+            background-color: #b1291d;
+            padding: 5px 0;
+        }
+
+        /* Estilo para el título */
+        .navbar-title {
+            font-family: 'Lora', serif;
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: #000;
+            text-align: center;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 0 20px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body class="has-background-light">
+
+    <!-- Menú de navegación con color mostaza (#dea632) -->
+    <nav class="navbar navbar-mostaza" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+            <!-- Imagen proporcionada con ajustes de tamaño -->
+            <a class="navbar-item" href="#">
+                <img src="https://www.itca.edu.sv/wp-content/uploads/2024/01/Logo55Web_1700x379.png" alt="Logo">
+            </a>
+        </div>
+
+        <div id="navbarBasicExample" class="navbar-menu">
+            <div class="navbar-end">
+                <a href="#" class="navbar-item has-text-dark">Inicio</a>
+                <a href="#" class="navbar-item has-text-dark">Ayuda</a>
+                <a href="#" class="navbar-item has-text-dark">Contacto</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Título centrado en la barra superior -->
+    <div class="navbar-title">
+        Gestión de Equipos y Reporte de Fallas del Taller H
+    </div>
+
+    <!-- Contenido principal -->
+    <div class="container mt-5">
+        <h2 class="title is-4">Órdenes de Trabajo</h2>
+        <table class="table is-bordered is-fullwidth">
+            <thead>
+                <tr class="has-background-dark has-text-white">
+                    <th>Código del Equipo</th>
+                    <th>Descripción de la Falla</th>
+                    <th>Fecha de Falla</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>T001</td>
+                    <td>No enciende</td>
+                    <td>2024-09-21</td>
+                    <td><button class="button is-success">Autorizar Mantenimiento</button></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Pie de página con color rojo terracota (#b1291d) -->
+    <footer class="footer footer-terracota">
+        <div class="content has-text-centered has-text-white">
+            <p>&copy; 2024 Sistema de Reporte de Fallas | Todos los derechos reservados</p>
+        </div>
+    </footer>
+
+</body>
+</html>
